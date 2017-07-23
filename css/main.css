@@ -305,6 +305,13 @@ PRE LOADER
         color:#000;
 		font-family: 'night_still_comesbold';
     }
+    #inspirations h2{
+    	color:#000;
+		font-family: 'night_still_comesbold';
+    }
+    #inspirations h3{
+    	margin-bottom: 20px;
+    }
     .logo img{
     	border-style: none;
     }
@@ -326,6 +333,31 @@ PRE LOADER
 		text-transform: uppercase;
     }
 
+    button{
+    	width: 200px;
+    	height: 50px;
+    	background-color: transparent;
+    	color: #000;
+    	border-style: solid;
+    	border-color: #000;
+    	border-width: 3px;
+    	font-style: bold;
+    	font-family: 'Lato', sans-serif;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+    }
+
+    button:hover{
+    	background-color: #000;
+    	color: #fff;
+    }
+
+    .books img{
+    	max-height: 250px;
+    	margin:10px 5px;
+    }
+
+    button:focus {outline:0;}
 
 
 

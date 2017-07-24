@@ -352,9 +352,9 @@ PRE LOADER
     	color: #fff;
     }
 
-    .books img{
+    #inspirations img{
     	max-height: 250px;
-    	margin:10px 5px;
+    	margin:5px 3px;
     }
 
     button:focus {outline:0;}

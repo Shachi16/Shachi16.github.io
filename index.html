@@ -181,17 +181,24 @@
         <div id="inspirations" class="wrap" style="text-align: center;">
             <div class="container">
                     <h2>My Inspirations</h2>
+                    <script>
+                        function showItems(sectionID, buttonSpan, itemName) {
+                            var x = document.getElementById(sectionID);
+                            if (x.style.display == 'none') {    
+                                x.style.display = 'block';
+                                document.getElementById(buttonSpan).textContent = "Hide "+ itemName;
+                            } else {
+                                x.style.display = 'none';
+                                document.getElementById(buttonSpan).textContent = "Show "+ itemName;
+                            }
+                        }
+                    </script>
                     <hr>
                     <br>
-                    <div class="links">
-                        <h3>Videos and Blog Posts</h3>
-                        <p></p>
-                        <button>Show links</button>
-                    </div>
-                    <div class="books">
-                        <h3>My Reading List</h3>
-                        <p>I am an avid reader. Here are a few of my favorite books that have also inspired me.</p>
-                        <button>Show Reading List</button>
+                    <h3>My Reading List</h3>
+                    <p>I am an avid reader. Here are a few of my favorite books that have also inspired me.</p>
+                    <button id = "booksButton" onclick="showItems('books','booksButtonSpan','Reading List')"><span id="booksButtonSpan">Show Reading List</span></button>
+                    <div id="books">
                         <div id = "bookpics" class="row">
                             <img src="img/lean-in.jpg"/>
                             <img src="img/1000-Splendid-Suns.jpg"/>
@@ -200,6 +207,21 @@
                             <img src="img/hp.jpg"/>
                         </div>
                         <p>To see what else I'm reading, check out my <a href="https://www.goodreads.com/user/show/56715545-shachi">goodreads</a>.</p>
+                    </div>
+                    <h3>People I Admire</h3>
+                    <button id = "peopleButton" onclick="showItems('people','peopleButtonSpan','People')"><span id="peopleButtonSpan">Show People</span></button>
+                    <div id="people">
+                        <h4>Reshma Saujani</h4>
+                        <img src="img/reshma.jpg"/>
+                        <p>Reshma Saujani is the founder and CEO of Girls Who Code. It was her TED talk about teaching girls to be brave and not perfect that inspired me to apply to work for Girls Who Code. Watch her talk <a href="https://www.ted.com/talks/reshma_saujani_teach_girls_bravery_not_perfection">here</a>.</p>
+                        <br>
+                        <h4>Sheryl Sandberg</h4>
+                        <img src="img/sheryl.jpg"/>
+                        <p>Sheryl Sandberg is the COO of Facebook. I read her book, <i>Lean In</i>, the summer of 2017 and was inspired.</p>
+                        <br>
+                        <h4>Emma Watson</h4>
+                        <img src="img/emma.jpg"/>
+                        <p>Emma Watson is an actress best known for her role as Hermione Granger in the Harry Potter series. Emma is also a UN Women Goodwill ambassador. Her fight for gender equality continues to inspire me.</p>   
                     </div>
             </div>
         </div>
